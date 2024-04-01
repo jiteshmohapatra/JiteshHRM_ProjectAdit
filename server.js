@@ -9,9 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-
-mongoose.connect('mongodb://localhost:27017/hrm', { useNewUrlParser: true });
-
+mongodb+srv://vercel-admin-user:Mohapatra@123@cluster0.6dd5hpl.mongodb.net/hrm?retryWrites=true&w=majority&appName=Cluster0
 const User = mongoose.model('User', {
   firstname: String,
   lastname: String,
